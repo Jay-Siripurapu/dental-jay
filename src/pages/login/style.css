@@ -1,0 +1,129 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+header{
+    height:91vh;
+    width:100vw;
+   
+    position: relative;
+   
+    
+}
+.main-header{
+    text-align:center;
+    width: 40%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    padding-top: 8px;
+    padding-bottom: 20px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+.one{
+    height:auto;
+    /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+    background:white;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-40%);
+   
+}
+ 
+
+.main-header h1{
+    font-size: 3rem;
+    color:black;
+}
+
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: black; 
+} 
+  
+.main-header input{
+    width:90%;
+    padding:1rem;
+    margin:10px 0px;
+    border:none;
+    border-bottom:1px solid black;
+    font-size: 2rem;
+  
+    background:transparent;
+    outline:none;
+    
+}
+
+.one input{
+    background:rgb(238, 235, 235);
+    padding:0.3rem;
+    border-bottom:none;
+    margin:5px 0px;
+    
+}
+.one select{
+    width:90%;
+    padding:1rem;
+    font-size: 2rem;
+    margin:10px 0px;
+    background: rgba(0, 0, 0, 0.08);
+
+}
+.radiosys{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    text-align: left;
+    
+    padding: 2%;
+    background:rgb(238, 235, 235);
+    margin-right:5%;
+    margin-left: 5%;
+
+}
+.one span{
+    font-size: 30px;
+}
+.one input[type="radio"]{
+    width:10%;
+    height: 1.5rem;
+   display: inline;
+    
+}
+.one button{
+    
+    padding-top:15px;
+    margin-top: 15px;
+    background: crimson;
+    color:red;
+}
+.main-header button{
+    padding:0.5rem 3rem;
+    font-size:1.8rem;
+    background:#fff;
+    color: rgb(51, 27, 27);
+    border:none;
+    border-radius: 50px;
+
+}.main-header button:hover{
+    transform: scale(1.1);
+}
+.one button{
+    padding-top:15px;
+    margin-top: 15px;
+    background: crimson;
+    color:black;
+}
+
+@media (min-height:1000px) and (min-width:800px){
+    .main-header img{
+    
+        height:0vh;
+        width:0vw;
+    }
+}
