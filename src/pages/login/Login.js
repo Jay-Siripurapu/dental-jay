@@ -11,7 +11,7 @@ export function Login(){
   return <div>
     <header>
      <div className="main-header">
-            {/* <img src={av} alt="jay"/> */}
+            
         <h1>Sign In</h1>
         <p><input type="text" placeholder="Username" onChange={(event)=>setName(event.target.value)}/></p>
         <p><input type="password" placeholder="Password" onChange={(event)=>setRoom(event.target.value)}/></p>

@@ -1,28 +1,16 @@
 import React,{useContext, useState,useEffect} from 'react';
-import queryString from "query-string";
 
-export function Home({location}){
-    var [name,setName]=useState("");
-    var [pass,setPass]=useState("");
+// import {Button} from 'react-bootstrap'
+// import Card from "react-bootstrap/Card";
+import "./home.css";
+
+export function Home(){
    
-    const onChangeValue=(event)=> {
-      console.log(event.target.value);
-    }
-    useEffect(()=>{
-        const {name,room,loggedin}=queryString.parse(location.search);
-       
-        setName(name); 
-        setPass(room);
-      
-        
-        return ()=>{
-           console.log("returned")
-        }
-    },[location.search]);
     
   return <div>
-     <header>
-     <div className="main-header one">
+  
+    <header>
+     <div className="home-card">
           
         <h1>Add User</h1>
        <input type="text" placeholder="Name" />
@@ -30,7 +18,7 @@ export function Home({location}){
        <input type="text" placeholder="Email" />
        <input type="text" placeholder="Password" />
        
-       <div onChange={onChangeValue} className="radiosys"> 
+       <div  className="radiosys"> 
          <h4>Role</h4>
         <input type="radio" value="Male" name="gender" /> <span>Admin</span><br/>
         <input type="radio" value="Female" name="gender" /> <span>Doctoe</span><br/>
@@ -53,6 +41,7 @@ export function Home({location}){
         </select>
         <br/>
         <button>Create</button>
+        
         
 </div>
 </header>
