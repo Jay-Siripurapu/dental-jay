@@ -29,8 +29,8 @@ export function Home(){
         <option value="defVal">Role</option>
         <option value="admin"> Admin</option>
         <option value="doctor"> Doctor</option>
-        <option value="Lt"> Lab Technitian</option>
-        <option value="Ct"> Chair Technitian</option>
+        <option value="Lt"> Lab Technician</option>
+        <option value="Ct"> Chair Technician</option>
         </select>
         <br/>
         {role==="doctor" ?(

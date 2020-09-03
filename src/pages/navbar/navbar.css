@@ -27,12 +27,12 @@ nav ul li {
     text-transform: uppercase;
 }
 
-/* li.active,li:hover{
+nav ul li:hover{
     background:#1b9bff;
     height:5vh;
     line-height: 5vh;
     transition: 0.5s;
-} */
+}
 
 .checkbtn{
       /* Safari */

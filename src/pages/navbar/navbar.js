@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const [loggedin, setlogin] = useState(false);
+  const [loggedin, setlogin] = useState(true);
 
   return (
     <nav>
@@ -20,7 +20,7 @@ const Navbar = () => {
               to="/admin/AddUser/"
               style={{ textDecoration: "none", color: "#edf0f1" }}
             >
-              ADD_USER
+              ADD USER
             </Link>
           </li>
           <li className="navli">
@@ -28,7 +28,7 @@ const Navbar = () => {
               to="/admin/reset/"
               style={{ textDecoration: "none", color: "#edf0f1" }}
             >
-              Reset_User
+              Reset User
             </Link>
           </li>
           <li className="navli">
@@ -48,7 +48,7 @@ const Navbar = () => {
               to="/about/"
               style={{ textDecoration: "none", color: "#edf0f1" }}
             >
-              Sign_out
+              Sign out
             </Link>
           </li>
         </ul>

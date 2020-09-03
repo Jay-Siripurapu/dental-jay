@@ -17,7 +17,7 @@ export function Hospital(){
         <p><input type="password" placeholder="Phone Number" onChange={(event)=>setNum(event.target.value)}/></p>
         {/* onClick={event=>(!name|| !room)? event.preventDefault() :null} */}
         <Link  to={`/home/?name=${hsp}&room=${num}&loggedin=${loggedin}`}>
-        <button className="btn btn-lg btn-primary  text-uppercase" type="submit">Add_Hospital</button>
+        <button className="btn btn-lg btn-primary  text-uppercase" type="submit">Submit</button>
         </Link>
 </div>
 <div className="main-header1 one">
@@ -27,7 +27,7 @@ export function Hospital(){
     
         {/* onClick={event=>(!name|| !room)? event.preventDefault() :null} */}
         <Link  to={`/home/?name=${hsp}&room=${num}&loggedin=${loggedin}`}>
-        <button className="btn btn-lg btn-primary  text-uppercase" type="submit">Remove_Hospital</button>
+        <button className="btn btn-lg btn-primary  text-uppercase" type="submit">Remove</button>
         </Link>
 </div>
 </header>
