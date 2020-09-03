@@ -17,7 +17,7 @@ export function Login(){
         <p><input type="password" placeholder="Password" onChange={(event)=>setRoom(event.target.value)}/></p>
         {/* onClick={event=>(!name|| !room)? event.preventDefault() :null} */}
         <Link  to={`/home/?name=${name}&room=${room}&loggedin=${loggedin}`}>
-        <button className="btn btn-lg btn-primary  text-uppercase" type="submit">Sign in</button>
+        <button className="btn btn-lg btn-primary  text-uppercase" type="submit">Sign_In</button>
         </Link>
 </div>
 </header>

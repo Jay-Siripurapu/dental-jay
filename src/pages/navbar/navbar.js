@@ -14,25 +14,31 @@ const Navbar = () => {
       <label className="logo">Vishnu Dental</label>
       {loggedin ? (
         <ul>
-          <li className="navli">
-            <Link to="/" style={{ textDecoration: "none", color: "#edf0f1" }}>
-              SignIn
-            </Link>
-          </li>
+          
           <li className="navli">
             <Link
-              to="/home/"
+              to="/admin/AddUser/"
               style={{ textDecoration: "none", color: "#edf0f1" }}
             >
-              Home
+              ADD_USER
             </Link>
           </li>
           <li className="navli">
             <Link
-              to="/reset/"
+              to="/admin/reset/"
               style={{ textDecoration: "none", color: "#edf0f1" }}
             >
               Reset_User
+            </Link>
+          </li>
+          <li className="navli">
+            <Link to="/admin/Lab" style={{ textDecoration: "none", color: "#edf0f1" }}>
+              Lab
+            </Link>
+          </li>
+          <li className="navli">
+            <Link to="/admin/Hospital/" style={{ textDecoration: "none", color: "#edf0f1" }}>
+              Hospital
             </Link>
           </li>
 
@@ -42,12 +48,17 @@ const Navbar = () => {
               to="/about/"
               style={{ textDecoration: "none", color: "#edf0f1" }}
             >
-              About
+              Sign_out
             </Link>
           </li>
         </ul>
       ) : (
         <ul className="nav_links">
+          <li className="navli">
+            <Link to="/" style={{ textDecoration: "none", color: "#edf0f1" }}>
+              SignIn
+            </Link>
+          </li>
           <li>
             
               <Link
