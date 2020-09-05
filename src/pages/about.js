@@ -7,8 +7,8 @@ export function About(){
       backgroundPosition: 'center',
        backgroundSize: "cover",
        overflow:"hidden",
-       height:"90vh",
-       width:"100vw"
+       height:"50vh",
+       width:"50vw"
 
 
     }

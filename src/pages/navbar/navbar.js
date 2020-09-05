@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
+import logout from "../../images/logout-24.png";
+import vishnu from "../../images/vlogo.png"
 const Navbar = () => {
   const [loggedin, setlogin] = useState(true);
 
   return (
-    <nav>
+    <nav >
       <input type="checkbox" id="check" />
+      
       <label htmlFor="check" className="checkbtn">
+      
         <span className="tlines">|||</span>
       </label>
 
-      <label className="logo">Vishnu Dental</label>
+      <label className="logo"><img style={{height:"25px",width:"25px"}} src={vishnu}/> Vishnu_Dental</label>
       {loggedin ? (
         <ul>
           
@@ -23,6 +27,7 @@ const Navbar = () => {
               ADD USER
             </Link>
           </li>
+          <br/>
           <li className="navli">
             <Link
               to="/admin/reset/"
@@ -31,24 +36,26 @@ const Navbar = () => {
               Reset User
             </Link>
           </li>
+          <br/>
           <li className="navli">
             <Link to="/admin/Lab" style={{ textDecoration: "none", color: "#edf0f1" }}>
               Lab
             </Link>
           </li>
+          <br/>
           <li className="navli">
             <Link to="/admin/Hospital/" style={{ textDecoration: "none", color: "#edf0f1" }}>
               Hospital
             </Link>
           </li>
-
-          <li>
+            <br/>
+          <li className="end">
             
             <Link
               to="/about/"
               style={{ textDecoration: "none", color: "#edf0f1" }}
             >
-              Sign out
+              Sign out <img style={{height:"15px",width:"20px"}} src={logout}/>
             </Link>
           </li>
         </ul>

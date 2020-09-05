@@ -19,15 +19,19 @@ function App() {
     
   <Router>
     
- 
+    <div className="navbar">
     <Navbar/>
-    <Route path="/admin/Hospital/" exact component={Hospital}/>
+    </div>
+   <div className="mainbody">
+   <Route path="/admin/Hospital/" exact component={Hospital}/>
     <Route path="/admin/Lab/" exact component={Lab}/>
     <Route path="/admin/AddUser/" exact component={Home}/>
     <Route path="/" exact component={Login}/>
     <Route path="/about/" exact  component={About}/>
     <Route path="/admin/reset/" exact  component={Reset}/>
 
+   </div>
+    
   </Router>
   
   );

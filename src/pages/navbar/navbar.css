@@ -3,34 +3,50 @@ nav{
 
     background: #007bff;
     
-    height:10vh;
+    height:100vh;
     
     width:100%;
-    min-height: 10vh;
+    
 }
 label.logo{
+    font-size: 27px;
+    
     color:white;
-    font-size: 6vh;
-    line-height: 8vh;
-    padding:0 5vw;
+    text-align: center;
+    line-height:10vh;
+    width: 100%;
+    border-bottom: 5px solid white;
 }
-nav ul{
-    float:right;
-    margin-right: 3vw;;
-}
+
 nav ul li {
     display:inline-block;
     margin: 0 1vw;
+    width:100%;
     line-height: 10vh;
     color:white;
     font-size: 2.4vh;
+    padding-left: 10%;
+    margin-left: 0;
+    border-left:0;
     text-transform: uppercase;
+    border-top:0.2px solid  rgb(91, 163, 204);
+     border-bottom:0.3px solid  rgb(94, 170, 206);
 }
+nav ul{
+    padding: 0;
+    border:0;
+}
+nav ul li.end {
 
+    position: absolute;
+    top: 88%;
+    
+     
+  }
 nav ul li:hover{
     background:#1b9bff;
-    height:5vh;
-    line-height: 5vh;
+    padding-left: 15%;
+    line-height: 10vh;
     transition: 0.5s;
 }
 
@@ -70,6 +86,10 @@ nav ul li:hover{
     .checkbtn{
         display: block;
     }
+    nav ul li.end{
+        position: relative;
+        top:0;
+    }
     ul{
         position: fixed;
         width:100%;
@@ -80,10 +100,15 @@ nav ul li:hover{
         transition:all .5s ;
         text-align: center;
     }
+    nav{
+        height: 10vh;
+    }
     nav ul li{
         display: block;
-        margin: 5vh 0;
-        line-height:10vh;
+        margin: 3vh 0;
+        line-height:8vh;
+        border-top:0px solid  rgb(91, 163, 204);
+        border-bottom:0px solid  rgb(94, 170, 206);
     }
     nav ul li a{
         font-size:5vh;
